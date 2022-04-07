@@ -5,7 +5,7 @@ using UnityEngine;
 public class FieldGen : MonoBehaviour
 {
     
-    [SerializeField] GameObject white, black;
+    [SerializeField] GameObject white, black, Pawn;
 
     string[] sAlpha = new string[8] { "A", "B", "C", "D", "E", "F", "G", "H"};
 
@@ -59,5 +59,20 @@ public class FieldGen : MonoBehaviour
                 }
             }
         }
+
+        for(int j = 0; j < 8; j++)
+        {
+
+            if(j==1||j==6)
+            {
+                for(int i = 0; i < 8; i++)
+                {                
+                    Instantiate(Pawn, new Vector2(i,j), Quaternion.identity);   
+                }
+            }
+
+        }
+
+
     }
 }

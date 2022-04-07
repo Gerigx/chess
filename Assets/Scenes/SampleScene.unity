@@ -237,6 +237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   white: {fileID: 3818773651215314704, guid: 0c8c7ce95c0793744b33fd6ee1c8221d, type: 3}
   black: {fileID: 6096814202168461120, guid: 0210ab2e0e0836742958a314ed832cd0, type: 3}
+  Pawn: {fileID: 8399848216332936909, guid: 63345eb3fadfc154191dcdb3185769aa, type: 3}
 --- !u!4 &2016041709
 Transform:
   m_ObjectHideFlags: 0
