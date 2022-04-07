@@ -42,7 +42,7 @@ public class FieldGen : MonoBehaviour
                     
 
                     counter ++;
-                    //Debug.Log(counter + " " + sAlpha[j] + "" + i);
+                    
 
                     }else if(i%2!=0)
                     {
@@ -52,7 +52,7 @@ public class FieldGen : MonoBehaviour
                         
 
                                             counter ++;
-                   //Debug.Log(counter + " " + sAlpha[j] + "" + i);;
+                   
                     }            
                 }
             }else if(j%2!=0)
