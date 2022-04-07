@@ -14,8 +14,7 @@ public class FieldGen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //white.name = "";
-        //black.name ="";
+
 
         Generation();
     }
