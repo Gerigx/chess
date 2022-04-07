@@ -51,7 +51,7 @@ public class FieldGen : MonoBehaviour
                         Instantiate(black, new Vector2(i,j), Quaternion.identity);
                         
 
-                                            counter ++;
+                        counter ++;
                    
                     }            
                 }
