@@ -26,8 +26,7 @@ public class FieldGen : MonoBehaviour
     }
 
     void Generation()
-    {
-        
+    {        
         for(int j = 0; j < 8; j++)
         {
             if(j%2==0)
@@ -35,57 +34,30 @@ public class FieldGen : MonoBehaviour
                 for (int i = 0; i < 8; i++)
                 {
                     if(i%2==0)
-                    {
-                        Debug.Log("Counter: " + counter + " Buchstabe: " + sAlpha[j] + " Spalte: " + i + " Kontrolle: " + j );
+                    {                     
                     white.name = sAlpha[j] + i;
-                    Instantiate(white, new Vector2(i,j), Quaternion.identity);  
-                    
-
-                    counter ++;
-                    
-
+                    Instantiate(white, new Vector2(i,j), Quaternion.identity);                  
                     }else if(i%2!=0)
-                    {
-                        Debug.Log("Counter: " + counter + " Buchstabe: " + sAlpha[j] + " Spalte: " + i + "Kontrolle: " + j );
+                    {                        
                         black.name = sAlpha[j] + i;
-                        Instantiate(black, new Vector2(i,j), Quaternion.identity);
-                        
-
-                        counter ++;
-                   
+                        Instantiate(black, new Vector2(i,j), Quaternion.identity);                   
                     }            
                 }
             }else if(j%2!=0)
             {
                 for (int i = 0; i < 8; i++)
-                {
-                    
+                {                    
                      if(i%2!=0)
                     {
-                        Debug.Log("Counter: " + counter + " Buchstabe: " + sAlpha[j] + " Spalte: " + i + "Kontrolle: " + j );
                         white.name = sAlpha[j] + i;
                         Instantiate(white, new Vector2(i,j), Quaternion.identity);
-                        
-                    counter ++;
-                    //Debug.Log(counter + " " + sAlpha[j] + "" + i);
-
                     }else if(i%2==0)
-                    {
-                        Debug.Log("Counter: " + counter + " Buchstabe: " + sAlpha[j] + " Spalte: " + i + "Kontrolle: " + j );
-                    black.name = sAlpha[j] + i;
-                    Instantiate(black, new Vector2(i,j), Quaternion.identity);  
-                    
-                    counter ++;
-                    //Debug.Log(counter + " " + sAlpha[j] + "" + i);
-
-                    }
-                    
-           
+                    { 
+                        black.name = sAlpha[j] + i;
+                        Instantiate(black, new Vector2(i,j), Quaternion.identity);
+                    }                  
                 }
             }
-
         }
-
-
     }
 }
